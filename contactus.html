@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Linterex | Contact Us</title>
+    <link rel="stylesheet" href="/css/nac4.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Teko&family=Bebas+Neue&family=Zen+Dots&display=swap');
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body::-webkit-scrollbar{
+    width: 0;
+  }
+  body {
+    background: radial-gradient(#132942 5%, #090a0f 100%);
+    font-size: 12px;
+    width: 100%;
+  }
+  html{
+    width: 100%;
+  }
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    min-height: 60vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 30px 0;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close1 {
+    background: #ed1c6f;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #8c38ff;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #8c38ff;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::-moz-placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:-ms-input-placeholder {
+    color: #666;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #8c38ff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #6a1bd9;
+  }
+
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+
+  .about{
+      cursor: pointer;
+      color: #FFFFFF;
+      padding-top: 20px;
+      padding-bottom: 30px;
+  }
+  .about h1 {
+      padding: 10px 0;
+      margin-bottom: 20px;
+  }
+  .about h2 {
+      opacity: .8;
+  }
+  .about span {
+      display: block;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      margin:auto;
+      border-radius:50%;  
+      font-size: 40px;
+      color: #FFFFFF;
+      opacity: 0.7;
+      background-color: #7521eb;
+      border: 2px solid #7521eb;
+  
+      webkit-transition:all .5s ease;
+       moz-transition:all .5s ease;
+       os-transition:all .5s ease;
+       transition:all .5s ease;
+  
+  }
+  .about-item:hover span{
+      opacity: 1;	
+      border: 2px solid #8c38ff;
+      font-size: 42px;
+      -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+      -moz-transform: scale(1.1,1.1) rotate(360deg) ;
+      -o-transform: scale(1.1,1.1) rotate(360deg) ;
+      transform: scale(1.1,1.1) rotate(360deg) ;
+  }
+  .about-item:hover h2{
+      opacity: 1;
+      -webkit-transform: scale(1.1,1.1)  ;
+      -moz-transform: scale(1.1,1.1)  ;
+      -o-transform: scale(1.1,1.1)  ;
+      transform: scale(1.1,1.1) ;
+  }
+  .about .lead{
+      color: #8c38ff;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #8c38ff;
+    text-align: center;
+    padding: 50px 0;
+    text-decoration: underline;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: 'Zen Dots', cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  h2{
+    font-family: 'Bebas Neue', cursive;
+    
+  }
+
+
+  </style>
+  
+
+  </head>
+  
+  <body>
+     <!-- header start -->
+  <header class="header4">
+    <div class="container4">
+       <div class="header-main">
+        <img class="fit" src="../imgs/logo.svg"/>
+          <div class="logo">           
+             <a href="#" id="supra" style="letter-spacing: 3px;">Company</a>
+          </div>
+          <div class="open-nav-menu">
+             <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+        <nav class="nav-menu">
+            <div class="close-nav-menu">
+               <img src="../imgs/close.svg" alt="close">
+            </div>
+            <ul class="menu">
+               <li class="menu-item">
+                  <a href="../index.html">Home</a>
+                  
+               </li>
+               <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Playground <i class="plus"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="../Playground/index.html">Play</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <!--<li class="menu-item"><a href="#">Scheme-2</a></li>
+                    <li class="menu-item"><a href="#">Scheme-3</a></li>-->
+                </ul>
+               </li>
+               <li class="menu-item">
+                  <a href="../Resources/index.html">Resources</a>
+               </li>
+               <li class="menu-item ">
+                  <a href="../Events/index.html" >Events </a>
+                  
+               </li>
+               <li class="menu-item">
+                  <a href="../Marketplace/index.html">Marketplace</a>
+               </li>
+               <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Company<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="aboutus.html">About US</a></li>
+                    <li class="menu-item"><a href="contactus.html">Contact US</a></li>
+                    <li class="menu-item"><a href="#">Terms & Conditions</a></li>
+                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+               </li>
+            </ul>
+            <div class="blue-line"></div>
+          </nav>
+          <!-- navigation menu end -->
+       </div>
+    </div>
+    <div class="blue-line"></div>
+ </header>
+ <!-- header end -->
+<div class="boom"></div>
+    <section class="text-center about">
+      <h1>GET IN TOUCH</h1>
+      <p>Is it Feedback,question,<br>partnership? We are all hears!</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-group"></span>
+            <h2>Help Center</h2>
+            <p class="lead"></p>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-globe"></span>
+            <h2>Forum</h2>
+            <p class="lead"> </p>
+          </div>
+          <div class="clearfix visible-md-block visible-sm-block"></div>
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-comments-o"></span>
+            <h2>Discord</h2>
+            <p class="lead"></p>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    <h1 style="background-color: black;">Have question? Contact Us!</h1>
+    <p style="color: white;text-align: center;">If You didn't find what you are looking for, reach out to us and our awsome team will get back to you as soon as possible</p>
+    <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close1"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : +00 0000000000</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME" value="">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MESSAGE">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL</button>
+                <button class="app-form-button">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/nac4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  </body>
+  </html>

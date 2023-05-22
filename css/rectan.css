@@ -1,0 +1,78 @@
+:root {
+  --primary: #8c38ff;
+  --light: #EEEEEE;
+  --dark: #212121;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #111;
+  height: 100%;
+  font-family: Raleway, sans-serif;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+.container5 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -moz-transition: all 0.3s ease 0.6s;
+  -o-transition: all 0.3s ease 0.6s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0.6s;
+  -webkit-transition: all 0.3s ease 0.6s;
+  transition: all 0.3s ease 0.6s;
+  z-index: 10;
+  position: relative; 
+}
+
+
+
+/*background matrix--Start*/
+
+canvas {
+  opacity: 30%;
+  width: 100%;
+  left: 5.4%;  
+}
+
+/*background matrix--End*/
+
+/*auto typing--Start*/
+
+.type {
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  width: 100%;
+  font-weight: 100;
+
+}
+
+.type h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+span {
+  color: #8c38ff;
+}
+
+
+
+#span1 {
+
+  color: #ffffff;
+}

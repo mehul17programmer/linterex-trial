@@ -1,0 +1,283 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linterex | Events</title>
+    <link rel="stylesheet" href="nac.css">
+    
+    
+    
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  body::-webkit-scrollbar{
+    width: 0px;
+  }
+  section {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "main main"
+      "event event";
+    background-image: url(https://sector.ca/wp-content/uploads/How-To-Get-The-Most-From-Your-First-Cybersecurity-Conference-1024x683.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  @media (min-width: 1200px) {
+    section {
+      grid-template-areas:
+        "main event"
+        "main event";
+    }
+  }
+  
+  .leftBox {
+    grid-area: main;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  section .leftBox .content {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: 0.5s;
+  }
+  
+  section .leftBox .content:hover {
+    background-color: #8c38ff;
+  }
+  
+  section .leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  
+  section .events {
+    grid-area: event;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+  
+  section .events ul {
+    margin: 0;
+    padding: 40px;
+    list-style: none;
+  }
+  
+  section .events ul li {
+    background-color: #fff;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+      "time time"
+      "detail detail";
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    section .events ul li {
+      grid-template-areas:
+        "time detail"
+        "time detail";
+    }
+  }
+  
+  section .events ul li .time {
+    grid-area: time;
+    position: relative;
+    padding: 8% 40%;
+    background-color: #262626;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  section .events ul li:hover .time {
+    background-color: #8c38ff;
+  }
+  
+  section .events ul li .time h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+  }
+  
+  section .events ul li .time h2 span {
+    font-size: 30px;
+  }
+  
+  section .events ul li .details {
+    grid-area: detail;
+    padding: 20px 20px 32px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  section .events ul li .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+  }
+  
+  section .events ul li .details p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 16px;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+  
+  section .events ul li .details a:hover {
+    background-color: #8c38ff;
+    color: #fff;
+    border-color: #8c38ff;
+  }
+  </style>
+  
+  </head>
+  
+  <body>
+     <!-- header start -->
+ <header class="header4">
+  <div class="container4">
+     <div class="header-main">
+      <img class="fit" src="../imgs/logo.svg"/>
+        <div class="logo">           
+           <a href="#" id="supra" style="letter-spacing: 3px;">Events</a>
+        </div>
+        <div class="open-nav-menu">
+           <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+             <img src="../imgs/close.svg" alt="close">
+          </div>
+          <ul class="menu">
+             <li class="menu-item">
+                <a href="../index.html">Home</a>
+                
+             </li>
+             <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Playground <i class="plus"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="../Playground/index.html">Play</a></li>
+                  <li class="menu-item"><a href="#">Pricing</a></li>
+                  <!--<li class="menu-item"><a href="#">Scheme-2</a></li>
+                  <li class="menu-item"><a href="#">Scheme-3</a></li>-->
+              </ul>
+             </li>
+             <li class="menu-item">
+                <a href="../Resources/index.html">Resources</a>
+             </li>
+             <li class="menu-item ">
+                <a href="../Events/index.html" >Events </a>
+                
+             </li>
+             <li class="menu-item">
+                <a href="../Marketplace/index.html">Marketplace</a>
+             </li>
+             <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Company<i class="plus"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="../aboutus.html">About US</a></li>
+                  <li class="menu-item"><a href="../contactus.html">Contact US</a></li>
+                  <li class="menu-item"><a href="#">Terms & Conditions</a></li>
+                  <li class="menu-item"><a href="#">Privacy Policy</a></li>
+              </ul>
+             </li>
+          </ul>
+          <div class="blue-line"></div>
+        </nav>
+        <!-- navigation menu end -->
+     </div>
+  </div>
+  <div class="blue-line"></div>
+</header>
+<!-- header end -->
+<div class="boom"></div>
+    <section>
+    <div class="leftBox">
+      <div class="content">
+        <h1 style="font-family: 'Bebas Neue', cursive; font-weight: 500;">Linterex Events</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <div class="events">
+      <ul>
+        <li>
+          <div class="time">
+            <h2>1<br><span>June</span></h2>
+          </div>
+          <div class="details">
+            <h3>Webinar On Cyber Awareness</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <a href="">View Details</a>
+          </div>
+          <div style="clear: both;"></div>
+        </li>
+        <li>
+          <div class="time">
+            <h2>1<br><span>June</span></h2>
+          </div>
+          <div class="details">
+            <h3>Linterex Launching New Tools,Courses</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <a href="">View Details</a>
+          </div>
+          <div style="clear: both;"></div>
+        </li>
+        <li>
+          <div class="time">
+            <h2>1<br><span>June</span></h2>
+          </div>
+          <div class="details">
+            <h3>General Discussion Meet</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <a href="">View Details</a>
+          </div>
+          <div style="clear: both;"></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="nac.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linterex | About US</title>
+  
+
+  <link rel="stylesheet" href="css/rectan.css">
+  <link rel="stylesheet" href="css/nac3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    
+    
+    
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Teko&family=Bebas+Neue&family=Zen+Dots&display=swap');
+
+
+    body{
+        background: radial-gradient(#132942 5%, #090a0f 100%);
+    }
+    
+  h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {}
+          a,
+          a:hover,
+          a:focus,
+          a:active {
+              text-decoration: none;
+              outline: none;
+          }
+          
+          a,
+          a:active,
+          a:focus {
+              color: #6f6f6f;
+              text-decoration: none;
+              transition-timing-function: ease-in-out;
+              -ms-transition-timing-function: ease-in-out;
+              -moz-transition-timing-function: ease-in-out;
+              -webkit-transition-timing-function: ease-in-out;
+              -o-transition-timing-function: ease-in-out;
+              transition-duration: .2s;
+              -ms-transition-duration: .2s;
+              -moz-transition-duration: .2s;
+              -webkit-transition-duration: .2s;
+              -o-transition-duration: .2s;
+          }
+          
+          ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+          }
+          img {
+      max-width: 100%;
+      height: auto;
+  }
+          section {
+              padding: 60px 0;
+             /* min-height: 100vh;*/
+          }
+  
+  .sec-title{
+    position:relative;
+    z-index: 1;
+    margin-bottom:60px;
+  }
+  
+  .sec-title .title{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8c38ff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .sec-title h2{
+    position: relative;
+    display: block;
+    font-size:40px;
+    line-height: 1.28em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-bottom:18px;
+  }
+  
+  .sec-title h2:before{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #8c38ff;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right:0;  
+    margin:0 auto;
+  }
+
+  
+  .sec-title .text{
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 200;
+    margin-top: 35px;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  .sec-title.light h2{
+    color: #ff0000;
+  }
+  
+  .sec-title.text-center h2:before{
+    left:50%;
+    margin-left: -25px;
+  }
+  
+  .list-style-one{
+    position:relative;
+  }
+  
+  .list-style-one li{
+    position:relative;
+    font-size:16px;
+    line-height:26px;
+    color: #222222;
+    font-weight:400;
+    padding-left:35px;
+    margin-bottom: 12px;
+  }
+  
+  .list-style-one li:before {
+      content: "\f058";
+      position: absolute;
+      left: 0;
+      top: 0px;
+      display: block;
+      font-size: 18px;
+      padding: 0px;
+      color: #ffffff;
+      font-weight: 600;
+      -moz-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1.6;
+      font-family: "Font Awesome 5 Free";
+  }
+  
+  .list-style-one li a:hover{
+    color: #7521eb;
+  }
+  
+  .btn-style-one{
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-weight: 600;
+    overflow: hidden;
+    letter-spacing: 0.02em;
+    background-color: #8c38ff;
+  }
+  
+  .btn-style-one:hover{
+    background-color: #7521eb;
+    color: #ffffff;
+  }
+  .about-section{
+    position: relative;
+    padding: 120px 0 70px;
+  }
+  
+  .about-section .sec-title{
+    margin-bottom: 45px;
+  }
+  
+  .about-section .content-column{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .about-section .content-column .inner-column{
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .about-section .text{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 400;
+  }
+  
+  .about-section .list-style-one{
+    margin-bottom: 45px;
+  }
+  
+  .about-section .btn-box{
+    position: relative;
+  }
+  
+  .about-section .btn-box a{
+    padding: 15px 50px;
+  }
+  
+  .about-section .image-column{
+    position: relative;
+  }
+  
+  .about-section .image-column .text-layer{
+      position: absolute;
+      right: -110px;
+      top: 50%;
+      font-size: 325px;
+      line-height: 1em;
+      color: #ffffff;
+      margin-top: -175px;
+      font-weight: 500;
+  }
+  
+  .about-section .image-column .inner-column{
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 0px;
+  }
+  .about-section .image-column .inner-column .author-desc{
+      position: absolute;
+      bottom: 16px;
+      z-index: 1;
+      background: orange;
+      padding: 10px 15px;
+      left: 96px;
+      width: calc(100% - 152px);
+      border-radius: 50px;
+  }
+  .about-section .image-column .inner-column .author-desc h2{
+      font-size: 21px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #fff;
+    margin: 0;
+  }
+  .about-section .image-column .inner-column .author-desc span{
+      font-size: 16px;
+      letter-spacing: 6px;
+      text-align: center;
+      color: #fff;
+    display: block;
+    font-weight: 400;
+  }
+  .about-section .image-column .inner-column:before{
+      content: '';
+      position: absolute;
+      width: calc(50% + 80px);
+      height: calc(100% + 160px);
+      top: -80px;
+      left: -3px;
+      background: transparent;
+      z-index: 0;
+      border: 44px solid #8c38ff;
+  }
+  
+  .about-section .image-column .image-1{
+    position: relative;
+  }
+  .about-section .image-column .image-2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .about-section .image-column .image-2 img,
+  .about-section .image-column .image-1 img{
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+        border-radius: 46px;
+  }
+  
+  .about-section .image-column .video-link{
+    position: absolute;
+    left: 70px;
+    top: 170px;
+  }
+  
+  .about-section .image-column .video-link .link{
+    position: relative;
+    display: block;
+    font-size: 22px;
+    color: #191e34;
+    font-weight: 400;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  
+  .about-section .image-column .video-link .link:hover{
+    background-color: #191e34;
+  }
+</style>
+</head>
+<body>
+   <!-- header start -->
+   <header class="header4">
+    <div class="container4">
+       <div class="header-main">
+        <img class="fit" src="../imgs/logo.svg"/>
+          <div class="logo">           
+             <a href="#" id="supra" style="letter-spacing: 3px;">Company</a>
+          </div>
+          <div class="open-nav-menu">
+             <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+        <nav class="nav-menu">
+            <div class="close-nav-menu">
+               <img src="../imgs/close.svg" alt="close">
+            </div>
+            <ul class="menu">
+               <li class="menu-item">
+                  <a href="../index.html">Home</a>
+                  
+               </li>
+               <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Playground <i class="plus"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="../Playground/index.html">Play</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <!--<li class="menu-item"><a href="#">Scheme-2</a></li>
+                    <li class="menu-item"><a href="#">Scheme-3</a></li>-->
+                </ul>
+               </li>
+               <li class="menu-item">
+                  <a href="../Resources/index.html">Resources</a>
+               </li>
+               <li class="menu-item ">
+                  <a href="../Events/index.html" >Events </a>
+                  
+               </li>
+               <li class="menu-item">
+                  <a href="../Marketplace/index.html">Marketplace</a>
+               </li>
+               <li style="z-index: 99;" class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Company<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="aboutus.html">About US</a></li>
+                    <li class="menu-item"><a href="contactus.html">Contact US</a></li>
+                    <li class="menu-item"><a href="#">Terms & Conditions</a></li>
+                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+               </li>
+            </ul>
+            <div class="blue-line"></div>
+          </nav>
+          <!-- navigation menu end -->
+       </div>
+    </div>
+    <div class="blue-line"></div>
+ </header>
+ <!-- header end -->
+<div class="boom"></div>
+   <div style="height: 50%;" class="content">
+    <div style="height: 100%;" class="container5">
+      <canvas style="height: 100%;" id="Matrix"></canvas>
+    
+    <div class="type">
+      <h3 style="font-family: 'Bebas Neue', cursive;font-size: 40px; font-weight: 100;">Introducing <span class="auto-typed"></span></h3>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </div>
+  <div>
+</div>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<section class="about-section">
+  <div class="container">
+      <div class="row">                
+          <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+              <div class="inner-column">
+                  <div class="sec-title">
+                     
+                      <h2 style="padding-top: 70px;text-align: center;font-family: 'Bebas Neue', cursive;">About Linterex</h2>
+                  </div>
+                  <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit enim tempore earum recusandae dolorem. Eius harum inventore accusamus deleniti aperiam ex recusandae deserunt repellat iste!</div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet architecto repellendus, fugiat id doloremque ullam, iusto totam aliquam dicta aspernatur quisquam quaerat, dolorum officia quis eligendi similique! Voluptas, provident!
+                </div>
+                  <div class="btn-box">
+                      <a href="contactus.html" class="theme-btn btn-style-one">Contact Us</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+              <div class="inner-column wow fadeInLeft">
+            
+                  <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img style="background: white;" src="/imgs/logo.svg" alt=""></a></figure>
+               
+              </div>
+          </div>
+        
+      </div>
+     <div class="sec-title">
+                      <h2 style="text-align:center;font-family: 'Bebas Neue', cursive;">Why Choose Us?</h2>
+                  </div>
+    <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum facere ratione vero magni distinctio repellat!.
+        </div>
+         <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae voluptatibus debitis fugit recusandae quasi.
+        </div>
+         <div class="text">                
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id, impedit placeat dolore cumque eaque tenetur totam quisquam suscipit nemo.
+        </div>
+         <div class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque sed est vero?
+        </div>
+         <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio totam magnam ratione iste, cum commodi doloribus porro soluta laborum cupiditate ea cumque possimus ullam sequi at!
+        </div>
+  </div>
+</section>
+
+    <script src="js/rainn.js"></script>
+    <script src="js/nac3.js"></script>
+
+
+</body>
+</html>
